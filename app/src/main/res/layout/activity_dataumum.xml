@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    tools:context=".activity.DataumumActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_dutgldaftar"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Daftar" />
+
+            <TextView
+                android:id="@+id/tv_dujenisperkara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Perkara: Cerai Talak" />
+
+            <TextView
+                android:id="@+id/tv_dunomorperkara"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomor Perkara : 1311/Pdt.G/2018/PA.Tbn" />
+
+            <TextView
+                android:id="@+id/tv_dustatusakhir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status akhir: Pembuatan Akta Cerai" />
+
+            <TextView
+                android:id="@+id/tv_dupihak1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pihak 1: SYAFI'I BIN MOCH. MUJI" />
+
+            <TextView
+                android:id="@+id/tv_dupihak2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PIhak 2: NUNIK DWI RAHAYU BINTI SUYADI" />
+
+            <TextView
+                android:id="@+id/tv_dupihak3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PIhak 3" />
+
+            <TextView
+                android:id="@+id/tv_dupihak4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pihak 4" />
+
+            <TextView
+                android:id="@+id/tv_dutglputus"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Putus: 07/August/2018" />
+
+            <TextView
+                android:id="@+id/tv_dutglminur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Minut : 08/August/2018" />
+
+            <TextView
+                android:id="@+id/tv_dutglbht"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal bht: 27/August/2018" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

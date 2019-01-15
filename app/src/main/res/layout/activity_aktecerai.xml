@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    tools:context=".activity.AkteceraiActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_acid"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Id Akte: 24263" />
+
+            <TextView
+                android:id="@+id/tv_actahun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tahun Akte Cerai: 2018" />
+
+            <TextView
+                android:id="@+id/tv_acnomor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomor Aktecerai: 1659/AC/2018/PA.Tbn " />
+
+            <TextView
+                android:id="@+id/tv_actanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Aktecerai: 18/September/2018" />
+
+            <TextView
+                android:id="@+id/tv_acserah1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Serah Aktecerai: 18/September/2018" />
+
+            <TextView
+                android:id="@+id/tv_acserah2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Serah Aktecerai 2 : " />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

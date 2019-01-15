@@ -1,10 +1,13 @@
 package net.ramastudio.anotheracojwt.utils;
 
+import net.ramastudio.anotheracojwt.adapter.JWTToken;
+
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
+import retrofit2.http.Header;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
 
@@ -20,6 +23,13 @@ public interface ApiService {
                                        @Field("nama") String nama,
                                        @Field("email") String email,
                                        @Field("password") String password);
+
+    @FormUrlEncoded
+    @POST("login")
+    Call<JWTToken> userlogin(@Field("noHP") String noHP, @Field("password")String password);
+
+    @GET("/phptest/jwttest.php")
+    Call<String> getUser(@Header("Authorization") String authorization);
 
 //    @GET("index.php/berita")
 //    Call<ResponseBerita> request_show_all_berita();

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="net.ramastudio.anotheracojwt">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
@@ -24,7 +26,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".activity.DataActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.DataumumActivity" />
+        <activity android:name=".activity.JadwalsidangActivity" />
+        <activity android:name=".activity.BiayaperkaraActivity" />
+        <activity android:name=".activity.RiwayatActivity" />
+        <activity android:name=".activity.PutusanActivity" />
+        <activity android:name=".activity.AkteceraiActivity"></activity>
     </application>
 
 </manifest>
